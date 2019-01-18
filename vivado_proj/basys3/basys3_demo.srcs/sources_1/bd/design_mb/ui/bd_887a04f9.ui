@@ -1,0 +1,24 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.8.5  2018-01-30 bk=1.4354 VDI=40 GEI=35 GUI=JA:1.6 non-TLS
+#  -string -flagsOSRD
+preplace port Vp_Vn_0 -pg 1 -y 210 -defaultsOSRD
+preplace port dclk_in -pg 1 -y 230 -defaultsOSRD
+preplace port reset_in -pg 1 -y 250 -defaultsOSRD
+preplace inst adc_reader_0 -pg 1 -lvl 2 -y 440 -defaultsOSRD
+preplace inst xadc_wiz_0 -pg 1 -lvl 1 -y 160 -defaultsOSRD
+preplace netloc Conn1 1 0 1 NJ
+preplace netloc adc_reader_0_di_in 1 0 3 60 330 NJ 330 700
+preplace netloc xadc_wiz_0_eos_out 1 1 1 360
+preplace netloc reset_in_1 1 0 2 20 10 400J
+preplace netloc adc_reader_0_daddr_in 1 0 3 40 310 380J 300 720
+preplace netloc adc_reader_0_dwe_in 1 0 3 80 340 390J 310 730
+preplace netloc adc_reader_0_den_in 1 0 3 50 320 NJ 320 710
+preplace netloc dclk_in_1 1 0 2 10 390 NJ
+preplace netloc xadc_wiz_0_drdy_out 1 0 2 70 430 NJ
+preplace netloc xadc_wiz_0_channel_out 1 1 1 370
+preplace netloc xadc_wiz_0_do_out 1 0 2 30 450 NJ
+levelinfo -pg 1 -10 220 550 750 -top 0 -bot 550
+",
+}
+

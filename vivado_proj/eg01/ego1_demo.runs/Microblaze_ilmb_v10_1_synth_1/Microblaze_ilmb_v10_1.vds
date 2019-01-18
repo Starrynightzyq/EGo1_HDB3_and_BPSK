@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Sep  8 10:20:22 2018
+# Process ID: 2272
+# Current directory: C:/Users/Administrator/Desktop/sdk_vga_test6_fuben2/sdk_vga_test6_fuben2/sdk_vga_test6_fuben2.runs/Microblaze_ilmb_v10_1_synth_1
+# Command line: vivado.exe -log Microblaze_ilmb_v10_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Microblaze_ilmb_v10_1.tcl
+# Log file: C:/Users/Administrator/Desktop/sdk_vga_test6_fuben2/sdk_vga_test6_fuben2/sdk_vga_test6_fuben2.runs/Microblaze_ilmb_v10_1_synth_1/Microblaze_ilmb_v10_1.vds
+# Journal file: C:/Users/Administrator/Desktop/sdk_vga_test6_fuben2/sdk_vga_test6_fuben2/sdk_vga_test6_fuben2.runs/Microblaze_ilmb_v10_1_synth_1\vivado.jou
+#-----------------------------------------------------------
+source Microblaze_ilmb_v10_1.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP Microblaze_ilmb_v10_1, cache-ID = da893c76ffba9959.
+INFO: [Common 17-206] Exiting Vivado at Sat Sep  8 10:20:36 2018...

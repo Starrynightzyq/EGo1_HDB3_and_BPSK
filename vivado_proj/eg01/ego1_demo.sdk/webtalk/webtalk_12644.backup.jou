@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# 
+# Start of session at: Thu Sep  6 19:44:36 2018
+# Process ID: 12644
+# Current directory: D:/Verliog_Project/sdk_vga_test6_fuben/sdk_vga_test6_fuben.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: D:/Verliog_Project/sdk_vga_test6_fuben/sdk_vga_test6_fuben.sdk/webtalk/webtalk.log
+# Journal file: D:/Verliog_Project/sdk_vga_test6_fuben/sdk_vga_test6_fuben.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

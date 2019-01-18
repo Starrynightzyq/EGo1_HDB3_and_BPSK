@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Jan 16 21:08:15 2019
+# Process ID: 13648
+# Current directory: C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/DMA_example/simple_dma
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5616 C:\MyFiles\EGo1_HDB3_and_BPSK\vivado_proj\DMA_example\simple_dma\simple_dma.xpr
+# Log file: C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/DMA_example/simple_dma/vivado.log
+# Journal file: C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/DMA_example/simple_dma\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project -read_only C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/DMA_example/simple_dma/simple_dma.xpr
+INFO: [Project 1-313] Project file moved from '/proj/css/Krishna.M/dma_designs/.Xil/Vivado-19174-xhdl2195/PrjAr/_X_' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+WARNING: [BD 41-1663] The design 'design_1.bd' cannot be modified due to following reason(s):
+* Project is read-only. Please run 'save_project_as' before making any change to the bd-design. 
+
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_1_processing_system7_0_axi_periph_0
+design_1_auto_pc_0
+design_1_axi_mem_intercon_0
+design_1_processing_system7_0_0
+design_1_axi_dma_0_0
+design_1_axis_data_fifo_0_0
+design_1_rst_processing_system7_0_50M_0
+design_1_xbar_0
+design_1_xlconcat_0_0
+design_1_auto_pc_1
+design_1_auto_us_0
+design_1_auto_us_1
+
+WARNING: [Project 1-229] Project 'simple_dma.xpr' is read-only and therefore could not be upgraded for this version of Vivado.  Use 'File | Save Project As...' if you wish to save an upgraded copy.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 857.668 ; gain = 146.027
+update_compile_order -fileset sources_1
+open_bd_design {C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/DMA_example/simple_dma/simple_dma.srcs/sources_1/bd/design_1/design_1.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_processing_system7_0_50M
+Adding cell -- xilinx.com:ip:axis_data_fifo:1.1 - axis_data_fifo_0
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <design_1> from BD file <C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/DMA_example/simple_dma/simple_dma.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 960.258 ; gain = 96.930
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 16 21:10:08 2019...

@@ -1,0 +1,21 @@
+verilog xil_defaultlib --include "../../../../sdk_vga_test6_fuben2.srcs/sources_1/bd/Microblaze/ipshared/b65a" --include "../../../../sdk_vga_test6_fuben2.srcs/sources_1/bd/Microblaze/ipshared/ec67/hdl" \
+"../../../bd/Microblaze/ip/Microblaze_xadc_wiz_0_0/Microblaze_xadc_wiz_0_0.v" \
+"../../../bd/Microblaze/ip/Microblaze_microblaze_0_xlconcat_0/sim/Microblaze_microblaze_0_xlconcat_0.v" \
+"../../../bd/Microblaze/ip/Microblaze_clk_wiz_1_1/Microblaze_clk_wiz_1_1_clk_wiz.v" \
+"../../../bd/Microblaze/ip/Microblaze_clk_wiz_1_1/Microblaze_clk_wiz_1_1.v" \
+"../../../bd/Microblaze/ipshared/44c1/hdl/sdk_vga4_dis_included_v1_0_S00_AXI.v" \
+"../../../bd/Microblaze/ipshared/44c1/VGA_control.v" \
+"../../../bd/Microblaze/ipshared/44c1/VGA_top.v" \
+"../../../bd/Microblaze/ipshared/44c1/vga_data2.v" \
+"../../../bd/Microblaze/ipshared/44c1/vga_data3.v" \
+"../../../bd/Microblaze/ipshared/44c1/src/ram_set.v" \
+"../../../bd/Microblaze/ipshared/44c1/vga_dis_char.v" \
+"../../../bd/Microblaze/ipshared/44c1/hdl/sdk_vga4_dis_included_v1_0.v" \
+"../../../bd/Microblaze/ip/Microblaze_sdk_vga4_dis_included_0_0/sim/Microblaze_sdk_vga4_dis_included_0_0.v" \
+"../../../bd/Microblaze/ip/Microblaze_xbar_0/sim/Microblaze_xbar_0.v" \
+"../../../bd/Microblaze/ip/Microblaze_lmb_bram_1/sim/Microblaze_lmb_bram_1.v" \
+"../../../bd/Microblaze/sim/Microblaze.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

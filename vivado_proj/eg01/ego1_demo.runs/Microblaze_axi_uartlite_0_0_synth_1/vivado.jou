@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Dec 24 11:17:43 2018
+# Process ID: 8084
+# Current directory: C:/MyFiles/sdk_vga_test6_fuben2/sdk_vga_test6_fuben2.runs/Microblaze_axi_uartlite_0_0_synth_1
+# Command line: vivado.exe -log Microblaze_axi_uartlite_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Microblaze_axi_uartlite_0_0.tcl
+# Log file: C:/MyFiles/sdk_vga_test6_fuben2/sdk_vga_test6_fuben2.runs/Microblaze_axi_uartlite_0_0_synth_1/Microblaze_axi_uartlite_0_0.vds
+# Journal file: C:/MyFiles/sdk_vga_test6_fuben2/sdk_vga_test6_fuben2.runs/Microblaze_axi_uartlite_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source Microblaze_axi_uartlite_0_0.tcl -notrace

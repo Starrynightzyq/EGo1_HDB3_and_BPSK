@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Sep  8 10:17:00 2018
+# Process ID: 8312
+# Current directory: C:/Users/Administrator/Desktop/sdk_vga_test6_fuben2/sdk_vga_test6_fuben2/sdk_vga_test6_fuben2.runs/Microblaze_dlmb_v10_1_synth_1
+# Command line: vivado.exe -log Microblaze_dlmb_v10_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Microblaze_dlmb_v10_1.tcl
+# Log file: C:/Users/Administrator/Desktop/sdk_vga_test6_fuben2/sdk_vga_test6_fuben2/sdk_vga_test6_fuben2.runs/Microblaze_dlmb_v10_1_synth_1/Microblaze_dlmb_v10_1.vds
+# Journal file: C:/Users/Administrator/Desktop/sdk_vga_test6_fuben2/sdk_vga_test6_fuben2/sdk_vga_test6_fuben2.runs/Microblaze_dlmb_v10_1_synth_1\vivado.jou
+#-----------------------------------------------------------
+source Microblaze_dlmb_v10_1.tcl -notrace
