@@ -2,23 +2,26 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="GPIO" key="selection"/>
+		<item value="MAX_PKT_LEN" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="MAX_PKT_LEN"/>
+			<item value="printf"/>
 			<item value="GPIO"/>
 			<item value="DmaRxDone"/>
 		</list>
 		<list key="replacehistory">
+			<item value="xil_printf"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item value="300" key="DIALOG_WIDTH"/>
-		<item value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|5|0|Microsoft YaHei UI" key="DIALOG_FONT_NAME"/>
-		<item value="410" key="DIALOG_HEIGHT"/>
-		<item value="1138" key="DIALOG_X_ORIGIN"/>
-		<item value="435" key="DIALOG_Y_ORIGIN"/>
+		<item value="285" key="DIALOG_WIDTH"/>
+		<item value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-24|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI" key="DIALOG_FONT_NAME"/>
+		<item value="368" key="DIALOG_HEIGHT"/>
+		<item value="1001" key="DIALOG_X_ORIGIN"/>
+		<item value="398" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

@@ -39,6 +39,7 @@
     <Object name="system_i/axis_data_fifo_0_M_AXIS_TVALID" gui_info="Trigger Setup=0"/>
     <Object name="system_i/stream_convert_0_m_axis_TREADY" gui_info="Trigger Setup=0 2"/>
     <Object name="system_i/stream_convert_0_m_axis_TVALID" gui_info="Trigger Setup=1"/>
+    <Object name="system_i/tlast_gen_0_m_axis_TLAST" gui_info="Trigger Setup=0"/>
     <Object name="system_i/xadc_wiz_0_M_AXIS_TREADY" gui_info="Trigger Setup=0"/>
   </ObjectList>
   <probeset name="hw project" active="false">
@@ -863,7 +864,7 @@
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
-        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bR"/>
         <Option Id="DISPLAY_AS_ENUM" value="1"/>
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="HEX"/>
@@ -874,7 +875,7 @@
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
-        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bR"/>
         <Option Id="WAVEFORM_STYLE" value="Digital"/>
       </probeOptions>
       <nets>
