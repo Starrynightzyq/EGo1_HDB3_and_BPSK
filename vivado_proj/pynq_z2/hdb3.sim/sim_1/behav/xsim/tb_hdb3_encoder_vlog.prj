@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../hdb3.srcs/sources_1/new/add_b.v" \
+"../../../../hdb3.srcs/sources_1/new/add_v.v" \
+"../../../../hdb3.srcs/sources_1/new/hdb3_encoder.v" \
+"../../../../hdb3.srcs/sources_1/new/polar.v" \
+"../../../../hdb3.srcs/sim_1/new/tb_hdb3_encoder.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
