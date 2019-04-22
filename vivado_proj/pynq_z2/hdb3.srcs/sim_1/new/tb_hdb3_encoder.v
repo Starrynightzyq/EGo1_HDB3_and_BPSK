@@ -25,13 +25,20 @@ module tb_hdb3_encoder();
 	reg clk;
 	reg rst_p;
 
-	reg data_i;
-	reg data_i_valid;
+	wire data_i;
+	wire data_i_valid;
 
 	// wire [1:0] data_o;
 	wire BP;
 	wire BN;
 	wire data_o_valid;
+
+	data_mem u_data_mem (
+		.clk(clk),
+		.ce(!rst_p),
+		.data_o(data_i),
+		.data_o_valid(data_i_valid)
+		);
 
 	hdb3_encoder u_test_hdb3_encoder (
 		.clk(clk),
@@ -49,43 +56,40 @@ module tb_hdb3_encoder();
 		#(T/2) clk = !clk;
 	end
 
-	//1	0	0	0	0	1	0	0	0	0	1	1	0	0	0	0	1
+	//1	0	0	0	0	1	0	0	0	0	1	1	0	0	0	0	0	0	0	0	1	1
 
 	initial begin
+		// $readmemb("C:/MyFiles/EGo1_HDB3_and_BPSK/matlab_proj/data.txt", mem);
+
 		clk = 1'b0;
 		rst_p = 1'b1;
-		data_i = 1'b0;
-		data_i_valid = 1'b0;
 
 		#(T*2) rst_p = 1'b0;
-		data_i_valid = 1'b1;
-		data_i = 1'b1;
+		// data_i = 1'b1;			// start
 
-		#(T) data_i = 1'b0;
-		#(T) data_i = 1'b1;
-		#(T) data_i = 1'b0;
-		#(T) data_i = 1'b0;
-		#(T) data_i = 1'b0;
-		#(T) data_i = 1'b0;
-		#(T) data_i = 1'b0;
-		#(T) data_i = 1'b1;
-		#(T) data_i = 1'b1;
-		#(T) data_i = 1'b0;
-		#(T) data_i = 1'b0;
-		#(T) data_i = 1'b0;
-		#(T) data_i = 1'b0;
-		#(T) data_i = 1'b1;
-		#(T) data_i = 1'b1;
-		#(T) data_i = 1'b0;
-		#(T) data_i = 1'b0;
-		#(T) data_i = 1'b0;
-		#(T) data_i = 1'b0;
-		#(T) data_i = 1'b0;
-		#(T) data_i = 1'b0;
+		// #(T) data_i = 1'b0;
+		// #(T) data_i = 1'b0;
+		// #(T) data_i = 1'b0;
+		// #(T) data_i = 1'b0;
+		// #(T) data_i = 1'b1;
+		// #(T) data_i = 1'b0;
+		// #(T) data_i = 1'b0;
+		// #(T) data_i = 1'b0;
+		// #(T) data_i = 1'b0;
+		// #(T) data_i = 1'b1;
+		// #(T) data_i = 1'b1;
+		// #(T) data_i = 1'b0;
+		// #(T) data_i = 1'b0;
+		// #(T) data_i = 1'b0;
+		// #(T) data_i = 1'b0;
+		// #(T) data_i = 1'b0;
+		// #(T) data_i = 1'b0;
+		// #(T) data_i = 1'b0;
+		// #(T) data_i = 1'b0;
+		// #(T) data_i = 1'b1;
+		// #(T) data_i = 1'b1;
 
-		#(T) data_i_valid = 1'b0;
-
-		#(T*20) $finish;
+		#(T*820) $finish;
 	end
 
 endmodule

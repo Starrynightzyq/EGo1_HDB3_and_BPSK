@@ -21,7 +21,7 @@
 
 
 module hdb3_encoder #(
-	parameter FIRST_POLAR = 1	/*1 表示第一个非0符取+1，0表示第一个非0符取-1*/
+	parameter FIRST_POLAR = 1'b0	/*1 表示第一个非0符取+1，0表示第一个非0符取-1*/
 	)(
 	input clk,
 	input rst_p,

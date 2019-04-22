@@ -21,7 +21,7 @@
 
 
 module polar #(
-	parameter FIRST_POLAR = 1
+	parameter FIRST_POLAR = 1'b0	// 1 表示首位取正，0 表示首位取负
 	)(
 	input clk,
 	input rst_p,
@@ -35,7 +35,7 @@ module polar #(
 	output reg data_o_valid
     );
 
-	reg even;				// 极性标志位
+	reg even = FIRST_POLAR;				// 极性标志位
 	reg [1:0] data_o; 		// 00 -> 0, 01 -> +1, 10 -> -1
 	reg [1:0] data_i_1 = 1'b0;
 	reg [1:0] data_i_2 = 1'b0;
@@ -70,7 +70,7 @@ module polar #(
 					data_o <= 2'b10;									// -1
 					even <= ~even;										// 符号标志位取反
 				end
-			end else begin 													// v 极性与前一个非 0 位相同
+			end else begin 												// v 极性与前一个非 0 位相同
 				if (even == 1'b1) begin
 					data_o <= 2'b10; 									// -1
 				end else begin

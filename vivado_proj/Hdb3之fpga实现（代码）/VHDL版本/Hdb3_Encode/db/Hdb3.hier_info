@@ -1,0 +1,57 @@
+|Hdb3
+Hdb3[0] <= Polar:inst6.Hdb3[0]
+Hdb3[1] <= Polar:inst6.Hdb3[1]
+Clk => Polar:inst6.Clk
+Clk => AddB:inst4.Clk
+Clk => AddV:inst.Clk
+Data_In => AddV:inst.Data_In
+
+
+|Hdb3|Polar:inst6
+Clk => FlagP.CLK
+Clk => Hdb3[1]~reg0.CLK
+Clk => Hdb3[0]~reg0.CLK
+Data_In[0] => Equal3.IN3
+Data_In[0] => Equal2.IN3
+Data_In[0] => Equal1.IN3
+Data_In[0] => Equal0.IN3
+Data_In[1] => Equal3.IN2
+Data_In[1] => Equal2.IN2
+Data_In[1] => Equal1.IN2
+Data_In[1] => Equal0.IN2
+Hdb3[0] <= Hdb3[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Hdb3[1] <= Hdb3[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Hdb3|AddB:inst4
+Clk => Data_OutB[1]~reg0.CLK
+Clk => Data_OutB[0]~reg0.CLK
+Clk => Buf[3][1].CLK
+Clk => Buf[3][0].CLK
+Clk => Buf[2][1].CLK
+Clk => Buf[2][0].CLK
+Clk => Buf[1][1].CLK
+Clk => Buf[1][0].CLK
+Clk => Buf[0][1].CLK
+Clk => Buf[0][0].CLK
+Clk => Count_Even.CLK
+Clk => FirstV.CLK
+Data_In[0] => Buf[0][0].DATAIN
+Data_In[1] => Buf[0][1].DATAIN
+Data_OutB[0] <= Data_OutB[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_OutB[1] <= Data_OutB[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Hdb3|AddV:inst
+Clk => Data_OutV[1]~reg0.CLK
+Clk => Data_OutV[0]~reg0.CLK
+Clk => Count0[1].CLK
+Clk => Count0[0].CLK
+Data_In => Count0~3.OUTPUTSELECT
+Data_In => Count0~2.OUTPUTSELECT
+Data_In => Data_OutV~0.OUTPUTSELECT
+Data_In => Data_OutV~1.OUTPUTSELECT
+Data_OutV[0] <= Data_OutV[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_OutV[1] <= Data_OutV[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

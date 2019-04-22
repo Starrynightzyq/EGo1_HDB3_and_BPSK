@@ -1,0 +1,167 @@
+Version 9.0 Build 132 02/25/2009 SJ Full Version
+11
+980
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+161mux
+# storage
+db|Hdb3.(1).cnf
+db|Hdb3.(1).cnf
+# case_insensitive
+# source_file
+..|..|..|..|altera|90|quartus|libraries|others|maxplus2|161mux.bdf
+3bf7d443a0f49509afd326562475c6
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+AddB
+# storage
+db|Hdb3.(4).cnf
+db|Hdb3.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+AddB.v
+1994a148144ab9a0dcb6b0cfcf302ad0
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+AddB:inst1
+}
+# macro_sequence
+
+# end
+# entity
+Polar
+# storage
+db|Hdb3.(2).cnf
+db|Hdb3.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+Polar.v
+34e8aca1c1e4ab0b56b9ba74dc85
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+Polar:inst5
+}
+# macro_sequence
+
+# end
+# entity
+AddV
+# storage
+db|Hdb3.(3).cnf
+db|Hdb3.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+AddV.v
+82993eaebfc6c76bc7fcafecc656baa
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+AddV:inst2
+}
+# macro_sequence
+
+# end
+# entity
+Hdb3
+# storage
+db|Hdb3.(0).cnf
+db|Hdb3.(0).cnf
+# case_insensitive
+# source_file
+Hdb3.bdf
+8fdcac781a24b7a8ebeb6e2ccb8da4
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

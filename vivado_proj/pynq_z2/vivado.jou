@@ -2,77 +2,119 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Fri Jan 25 14:15:22 2019
-# Process ID: 11484
+# Start of session at: Mon Apr 22 11:57:55 2019
+# Process ID: 13256
 # Current directory: C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/pynq_z2
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11344 C:\MyFiles\EGo1_HDB3_and_BPSK\vivado_proj\pynq_z2\hdb3.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6116 C:\MyFiles\EGo1_HDB3_and_BPSK\vivado_proj\pynq_z2\hdb3.xpr
 # Log file: C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/pynq_z2/vivado.log
 # Journal file: C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/pynq_z2\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/pynq_z2/hdb3.xpr
 update_compile_order -fileset sources_1
-close [ open C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/pynq_z2/hdb3.srcs/sources_1/new/encoder.v w ]
-add_files C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/pynq_z2/hdb3.srcs/sources_1/new/encoder.v
-update_compile_order -fileset sources_1
-export_ip_user_files -of_objects  [get_files C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/pynq_z2/hdb3.srcs/sources_1/new/encoder.v] -no_script -reset -force -quiet
-remove_files  C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/pynq_z2/hdb3.srcs/sources_1/new/encoder.v
-file delete -force C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/pynq_z2/hdb3.srcs/sources_1/new/encoder.v
-close [ open C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/pynq_z2/hdb3.srcs/sources_1/new/hdb3_encoder.v w ]
-add_files C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/pynq_z2/hdb3.srcs/sources_1/new/hdb3_encoder.v
-update_compile_order -fileset sources_1
-update_ip_catalog
-close [ open C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/pynq_z2/hdb3.srcs/sources_1/new/hdb3_decoder.v w ]
-add_files C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/pynq_z2/hdb3.srcs/sources_1/new/hdb3_decoder.v
-update_compile_order -fileset sources_1
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top polar [current_fileset]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sources_1
 synth_design -rtl -name rtl_1
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-close [ open C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/pynq_z2/hdb3.srcs/sim_1/new/tb_polar.v w ]
-add_files -fileset sim_1 C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/pynq_z2/hdb3.srcs/sim_1/new/tb_polar.v
-update_compile_order -fileset sim_1
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top tb_polar [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sim_1
-launch_simulation
-source tb_polar.tcl
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top hdb3_encoder [current_fileset]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sources_1
-refresh_design
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-close [ open C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/pynq_z2/hdb3.srcs/sim_1/new/tb_hdb3_encoder.v w ]
-add_files -fileset sim_1 C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/pynq_z2/hdb3.srcs/sim_1/new/tb_hdb3_encoder.v
-update_compile_order -fileset sim_1
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top tb_hdb3_encoder [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sim_1
+update_ip_catalog
+update_ip_catalog
 launch_simulation
 source tb_hdb3_encoder.tcl
 relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+save_wave_config {C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/pynq_z2/tb_hdb3_encoder_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/pynq_z2/tb_hdb3_encoder_behav.wcfg
+set_property xsim.view C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/pynq_z2/tb_hdb3_encoder_behav.wcfg [get_filesets sim_1]
+relaunch_sim
+relaunch_sim
+relaunch_sim
+save_wave_config {C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/pynq_z2/tb_hdb3_encoder_behav.wcfg}
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+save_wave_config {C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/pynq_z2/tb_hdb3_encoder_behav.wcfg}
+close [ open C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/pynq_z2/hdb3.srcs/sources_1/new/data_mem.v w ]
+add_files C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/pynq_z2/hdb3.srcs/sources_1/new/data_mem.v
 update_compile_order -fileset sources_1
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run 1000ns
+run 10000ns
+save_wave_config {C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/pynq_z2/tb_hdb3_encoder_behav.wcfg}
+save_wave_config {C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/pynq_z2/tb_hdb3_encoder_behav.wcfg}
+save_wave_config {C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/pynq_z2/tb_hdb3_encoder_behav.wcfg}
+save_wave_config {C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/pynq_z2/tb_hdb3_encoder_behav.wcfg}
+close [ open C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/pynq_z2/hdb3.srcs/sources_1/new/remove_vb.v w ]
+add_files C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/pynq_z2/hdb3.srcs/sources_1/new/remove_vb.v
 update_compile_order -fileset sources_1
+close [ open C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/pynq_z2/hdb3.srcs/sources_1/new/remove_polar.v w ]
+add_files C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/pynq_z2/hdb3.srcs/sources_1/new/remove_polar.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/pynq_z2/hdb3.srcs/sources_1/new/remove_polar.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/pynq_z2/hdb3.srcs/sources_1/new/remove_vb.v] -no_script -reset -force -quiet
+remove_files  {C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/pynq_z2/hdb3.srcs/sources_1/new/remove_polar.v C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/pynq_z2/hdb3.srcs/sources_1/new/remove_vb.v}
+close [ open C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/pynq_z2/hdb3.srcs/sources_1/new/hdb3.v w ]
+add_files C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/pynq_z2/hdb3.srcs/sources_1/new/hdb3.v
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/pynq_z2/hdb3.srcs/sim_1/new/tb_hdb3.v w ]
+add_files -fileset sim_1 C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/pynq_z2/hdb3.srcs/sim_1/new/tb_hdb3.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top hdb3 [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_hdb3 [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
 refresh_design
+refresh_design
+refresh_design
+launch_simulation
+open_wave_config C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/pynq_z2/tb_hdb3_encoder_behav.wcfg
+source tb_hdb3.tcl
+add_wave {{/tb_hdb3/data_i}} {{/tb_hdb3/data_i_valid}} {{/tb_hdb3/data_o}} {{/tb_hdb3/data_o_valid}} 
 relaunch_sim
 relaunch_sim
 relaunch_sim
 relaunch_sim
 relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run 10000ns
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run 1000ns
+relaunch_sim
+relaunch_sim
+refresh_design
+refresh_design
+save_wave_config {C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/pynq_z2/tb_hdb3_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/pynq_z2/tb_hdb3_behav.wcfg
+set_property xsim.view {C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/pynq_z2/tb_hdb3_encoder_behav.wcfg C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/pynq_z2/tb_hdb3_behav.wcfg} [get_filesets sim_1]
+save_wave_config {C:/MyFiles/EGo1_HDB3_and_BPSK/vivado_proj/pynq_z2/tb_hdb3_behav.wcfg}
 close_sim
 close_sim

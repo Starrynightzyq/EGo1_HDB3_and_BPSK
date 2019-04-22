@@ -1,0 +1,46 @@
+|Hdb3
+True_Code <= Polar:inst3.True_Code
+Clk => Polar:inst3.Clk
+Clk => AbandonVB:inst.Clk
+Hdb3[0] => AbandonVB:inst.Hdb3[0]
+Hdb3[1] => AbandonVB:inst.Hdb3[1]
+
+
+|Hdb3|Polar:inst3
+Clk => True_Code~reg0.CLK
+Data_In[0] => Equal2.IN3
+Data_In[0] => Equal1.IN3
+Data_In[0] => Equal0.IN3
+Data_In[1] => Equal2.IN2
+Data_In[1] => Equal1.IN2
+Data_In[1] => Equal0.IN2
+True_Code <= True_Code~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Hdb3|AbandonVB:inst
+Clk => Buf[3][1].CLK
+Clk => Buf[3][0].CLK
+Clk => Buf[2][1].CLK
+Clk => Buf[2][0].CLK
+Clk => Buf[1][1].CLK
+Clk => Buf[1][0].CLK
+Clk => Buf[0][1].CLK
+Clk => Buf[0][0].CLK
+Clk => Count_0[1].CLK
+Clk => Count_0[0].CLK
+Clk => Data_OutP[1]~reg0.CLK
+Clk => Data_OutP[0]~reg0.CLK
+Hdb3[0] => Buf~9.DATAB
+Hdb3[0] => Buf~1.DATAA
+Hdb3[0] => process_0~3.IN1
+Hdb3[0] => process_0~0.IN1
+Hdb3[0] => Equal0.IN3
+Hdb3[1] => Buf~8.DATAB
+Hdb3[1] => Buf~0.DATAA
+Hdb3[1] => process_0~4.IN1
+Hdb3[1] => process_0~1.IN1
+Hdb3[1] => Equal0.IN2
+Data_OutP[0] <= Data_OutP[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_OutP[1] <= Data_OutP[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
